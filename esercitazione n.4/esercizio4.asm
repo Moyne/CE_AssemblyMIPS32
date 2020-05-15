@@ -18,9 +18,9 @@ main:
 	bne $t1,$t3,loopx
 	j end
 	
-	loopx:	addi $t1,$t1,4
+	loopx:	
 			and $t2,$0,$0
-			loopx
+			j loopy
 			
 	end:	li $v0,10
 			syscall
